@@ -298,6 +298,7 @@ else
     status_nginx="${red}OFF${NC}"
 fi
 clear                    
+figlet 'ILHAM STORE' | lolcat
                     echo -e "${Kcyan}┌───────────────────────────────────────────┐${NC}" 
                     echo -e "${Kcyan}│${NC} ${white} IP VPS  ${NC}: $IPVPS"
                     echo -e "${Kcyan}│${NC} ${white} CPU     ${NC}: $cpu_usage"  
@@ -307,7 +308,7 @@ clear
                     echo -e "${Kcyan}│${NC} ${white} CPU     ${NC}: $cpu_usage"
                     echo -e "${Kcyan}│${NC} ${white} DATE   ${NC}: $DATE"
                     echo -e "${Kcyan}│${NC} ${white} HOST  ${NC}: $domain"
-                    echo -e "${Kcyan}│${NC} ${white} UPTI    ${NC}: $uptime"
+                    echo -e "${Kcyan}│${NC} ${white} UPTIM ${NC}: $uptime"
                     echo -e "${Kcyan}└───────────────────────────────────────────┘${NC}"  
                     echo -e " [ SSH : $status_ws_epro ] [ X-RAY : $status_ss ] [ NGINX : $status_nginx ]"
                     echo -e "${Kcyan}┌───────────────────────────────────────────┐${NC}"
@@ -316,17 +317,20 @@ clear
                     echo -e "${Kcyan}┌───────────────────────────────────────────┐${NC}"
                     echo -e "${Kcyan}│${NC}${whiteK}           Client : ${NC}${MK}$Name${NC}"
                     echo -e "${Kcyan}│${NC}${whiteK}           Xpired : ${NC}${MK}($Exp) $exp2 days ${NC}"
+                    echo -e "${Kcyan}│${NC}${WhiteK}          Autorz : ${NC}${MK}ILHAM-STORE${NC}"
                     echo -e "${Kcyan}└───────────────────────────────────────────┘${NC}"
-                    echo -e "${Kcyan}┌───────────────────────────────────────────┐"
-                    echo -e "${Kcyan}│${NC}${Kbiru} [•1]${NC}📨 ${white} SSH${NC}        " "${Kbiru}[•6]${NC}📨 ${white} CHECK RUNNING${NC}"   "${Kcyan}│${NC}"
-                    echo -e "${Kcyan}│${NC}${Kbiru} [•2]${NC}📨 ${white} VMESS${NC}      " "${Kbiru}[•7]${NC}📨 ${white} RESTR SERVICE${NC}"   "${Kcyan}│${NC}"  
-                    echo -e "${Kcyan}│${NC}${Kbiru} [•3]${NC}📨 ${white} VLESS${NC}      " "${Kbiru}[•8]${NC}📨 ${white} BACKUP MENU${NC}  "   "${Kcyan}│${NC}"
-                    echo -e "${Kcyan}│${NC}${Kbiru} [•4]${NC}📨 ${white} TROJAN-GO${NC}  " "${Kbiru}[•9]${NC}📨 ${white} SET PASW VPS${NC} "   "${Kcyan}│${NC}"
-                    echo -e "${Kcyan}│${NC}${Kbiru} [•5]${NC}📨 ${white} TROJAN-WS${NC}  " "${Kbiru}[10]${NC}📨 ${white} MENU SETINGS${NC} "   "${Kcyan}│${NC}"
-                    echo -e "${Kcyan}└───────────────────────────────────────────┘"    
+                    echo -e "${Kcyan}┌───────────────────────────────────────────┐${NC}"
+                    echo -e "${Kcyan}│${NC}${Kbiru} [•1]${NC}📨 ${white} SSH${NC}        " "${Kbiru}[•8]${NC}📨 ${white} BACKUP${NC}"   "${Kcyan}│${NC}"
+                    echo -e "${Kcyan}│${NC}${Kbiru} [•2]${NC}📨 ${white} VMESS${NC}      " "${Kbiru}[•9]${NC}📨 ${white} SET PW VPS${NC}"   "${Kcyan}│${NC}"  
+                    echo -e "${Kcyan}│${NC}${Kbiru} [•3]${NC}📨 ${white} VLESS${NC}      " "${Kbiru}[10]${NC}📨 ${white} SET MENU${NC}  "   "${Kcyan}│${NC}"
+                    echo -e "${Kcyan}│${NC}${Kbiru} [•4]${NC}📨 ${white} TROJAN-GO${NC}  " "${Kbiru}[11]${NC}📨 ${white} GANTI DOMAIN${NC} "   "${Kcyan}│${NC}"
+                    echo -e "${Kcyan}│${NC}${Kbiru} [•5]${NC}📨 ${white} TROJAN-WS${NC}  " "${Kbiru}[12]${NC}📨 ${white} CLEAR SAMPAH${NC} "   "${Kcyan}│${NC}"
+                    echo -e "${Kcyan}│${NC}${Kbiru} [•6]${NC}📨 ${white} CHECK RUNNING${NC}  " "${Kbiru}[13]${NC}📨 ${white} SETTINGS REBOOT${NC} "   "${Kcyan}│${NC}"
+                    echo -e "${Kcyan}│${NC}${Kbiru} [•7]${NC}📨 ${white} RESTART SERVICE${NC}  " "${Kbiru}[14]${NC}📨 ${white} CEK BANDWITH${NC} "   "${Kcyan}│${NC}"
+                    echo -e "${Kcyan}└───────────────────────────────────────────┘"${NC}
 echo -e ""
 echo -e   "${kuning}"
-read -p " >>>>  "  opt
+read -p " select menu [ 1 / 14 ] ------ >>      "  opt
 echo -e   ""
 case $opt in
 1) clear ; menu-sshh ;;
@@ -339,5 +343,9 @@ case $opt in
 8) clear ; menu-backup ;;
 9) clear ; passwd ;;
 10) clear ; menu-set ;;
+11) clear ; menu-domain ;;
+12) clear ; clearcache ;;
+13) clear ; auto-reboot ;;
+14) clear ; bw ;;
 x) exit ;;
 esac

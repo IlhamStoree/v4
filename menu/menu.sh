@@ -316,9 +316,9 @@ figlet 'ILHAM STORE' | lolcat
                     echo -e "${Kcyan} SSH : $ssh1 │ VMES : $vma │ VLES : $vla │ TROJAN : $tra"
                     echo -e "${Kcyan}└───────────────────────────────────────────┘${NC}"
                     echo -e "${Kcyan}┌───────────────────────────────────────────┐${NC}"
-                    echo -e "${Kcyan}│${NC}${whiteK}           Client : ${NC}${MK}$Name${NC}"
-                    echo -e "${Kcyan}│${NC}${whiteK}           Xpired : ${NC}${MK}$exp2 days${NC}"
-                    echo -e "${Kcyan}│${NC}${WhiteK}           Autorz : ${NC}${GR}ILHAM-STORE${NC}"
+                    echo -e "${Kcyan}│${NC}${whiteK}           Client : ${NC}${MK} $Name${NC}"
+                    echo -e "${Kcyan}│${NC}${whiteK}           Xpired : ${NC}${MK} $Exp${NC}"
+                    echo -e "${Kcyan}│${NC}${WhiteK}           Autorz : ${NC}${GR} ILHAM-STORE${NC}"
                     echo -e "${Kcyan}└───────────────────────────────────────────┘${NC}"
                     echo -e "${Kcyan}┌───────────────────────────────────────────┐${NC}"
                     echo -e "${Kcyan}│${NC}${Kbiru} [•1]${NC}📨 ${white} SSH${NC}        " "${Kbiru}[•8]${NC}📨 ${white} BACKUP${NC}       "  "${Kcyan}│${NC}"
@@ -331,7 +331,7 @@ figlet 'ILHAM STORE' | lolcat
                     echo -e "${Kcyan}└───────────────────────────────────────────┘"${NC}
 echo -e ""
 echo -e   "${kuning}"
-read -p " select menu [ 1 / 14 ] ------ >>      "  opt
+read -p " select menu [ 1 / 14 ] ------ >>    "  opt
 echo -e   ""
 case $opt in
 1) clear ; menu-sshh ;;

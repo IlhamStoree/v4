@@ -317,7 +317,7 @@ figlet 'ILHAM STORE' | lolcat
                     echo -e "${Kcyan}└───────────────────────────────────────────┘${NC}"
                     echo -e "${Kcyan}┌───────────────────────────────────────────┐${NC}"
                     echo -e "${Kcyan}│${NC}${whiteK}           Client : ${NC}${MK}$Name${NC}"
-                    echo -e "${Kcyan}│${NC}${whiteK}           Xpired : ${NC}${MK}($Exp) $exp2 days${NC}"
+                    echo -e "${Kcyan}│${NC}${whiteK}           Xpired : ${NC}${MK}$exp2 days${NC}"
                     echo -e "${Kcyan}│${NC}${WhiteK}           Autorz : ${NC}${GR}ILHAM-STORE${NC}"
                     echo -e "${Kcyan}└───────────────────────────────────────────┘${NC}"
                     echo -e "${Kcyan}┌───────────────────────────────────────────┐${NC}"

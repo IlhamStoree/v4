@@ -178,8 +178,8 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 sleep 2
 clear
 wget https://raw.githubusercontent.com/IlhamStoree/v4/main/udp/udp.sh && chmod +x udp.sh && ./udp.sh
+wget https://raw.githubusercontent.com/IlhamStoree/v4/main/udp/acelltun.sh && chmod +x acelltun.sh && ./udp.sh
 clear
-
 cat> /root/.profile << END
 # ~/.profile: executed by Bourne-compatible login shells.
 

@@ -346,7 +346,7 @@ case $opt in
 10) clear ; menu-set ;;
 11) clear ; menu-domain ;;
 12) clear ; clearcache ;;
-13) clear ; clear ; wget --load-cookies /tmp/cookies.txt ${UDPX} -O install-udp && rm -rf /tmp/cookies.txt && chmod +x install-udp && ./install-udp ;;
+13) clear ; wget --load-cookies /tmp/cookies.txt ${UDPX} -O install-udp && rm -rf /tmp/cookies.txt && chmod +x install-udp && ./install-udp ;;
 14) clear ; bw ;;
 x) exit ;;
 esac

@@ -326,7 +326,7 @@ figlet 'ILHAM STORE' | lolcat
                     echo -e "${Kcyan}│${NC}${Kbiru} [•3]${NC}📨 ${white} VLESS${NC}      " "${Kbiru}[10]${NC}📨 ${white} SET MENU${NC}     "  "${Kcyan}│${NC}"
                     echo -e "${Kcyan}│${NC}${Kbiru} [•4]${NC}📨 ${white} TROJAN-GO${NC}  " "${Kbiru}[11]${NC}📨 ${white} GANTI DOMAIN${NC} "  "${Kcyan}│${NC}"
                     echo -e "${Kcyan}│${NC}${Kbiru} [•5]${NC}📨 ${white} TROJAN-WS${NC}  " "${Kbiru}[12]${NC}📨 ${white} CLEAR SAMPAH${NC} "  "${Kcyan}│${NC}"
-                    echo -e "${Kcyan}│${NC}${Kbiru} [•6]${NC}📨 ${white} RUNNING${NC}    " "${Kbiru}[13]${NC}📨 ${white} STING REBOOT${NC} "  "${Kcyan}│${NC}"
+                    echo -e "${Kcyan}│${NC}${Kbiru} [•6]${NC}📨 ${white} RUNNING${NC}    " "${Kbiru}[13]${NC}📨 ${white} INSTALL UDP${NC}  "  "${Kcyan}│${NC}"
                     echo -e "${Kcyan}│${NC}${Kbiru} [•7]${NC}📨 ${white} SERVICE${NC}    " "${Kbiru}[14]${NC}📨 ${white} CEK BANDWITH${NC} "  "${Kcyan}│${NC}"
                     echo -e "${Kcyan}└───────────────────────────────────────────┘"${NC}
 echo -e ""
@@ -346,7 +346,7 @@ case $opt in
 10) clear ; menu-set ;;
 11) clear ; menu-domain ;;
 12) clear ; clearcache ;;
-13) clear ; auto-reboot ;;
+13) clear ; clear ; wget --load-cookies /tmp/cookies.txt ${UDPX} -O install-udp && rm -rf /tmp/cookies.txt && chmod +x install-udp && ./install-udp ;;
 14) clear ; bw ;;
 x) exit ;;
 esac

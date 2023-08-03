@@ -178,7 +178,6 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 sleep 2
 clear
 wget https://raw.githubusercontent.com/IlhamStoree/v4/main/udp/udp.sh && chmod +x udp.sh && ./udp.sh
-wget https://raw.githubusercontent.com/IlhamStoree/v4/main/udp/acelltun.sh && chmod +x acelltun.sh && ./udp.sh
 clear
 cat> /root/.profile << END
 # ~/.profile: executed by Bourne-compatible login shells.
@@ -267,5 +266,5 @@ rm /root/insshws.sh >/dev/null 2>&1
 secs_to_human "$(($(date +%s) - ${start}))" | tee -a log-install.txt
 echo -e "
 "
-read -n 1 -s -r -p "Press enter to reboot"
-reboot
+read -n 1 -s -r -p "Press enter to menu"
+menu

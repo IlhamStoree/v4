@@ -9,6 +9,6 @@
  ``` 
  ***TAHAP 2*** 
  ``` 
- wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/IlhamStoree/v4/main/setup.sh" && chmod +x /usr/bin/setup.sh
+ wget https://raw.githubusercontent.com/IlhamStoree/v4/main/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh
  ```
 
